@@ -24,17 +24,15 @@ if(ballx - ballz/2 < 0){
 if(bally - ballz/2-12.5 < 0){
   speedy *= -1;
 }
-if(keyPressed){
- if(mousePressed){
+if(key== 'a'){
      speedx = int(random(-10,10));
   speedy = int(random(2,10));
   fill(255,0,0);{
   textSize(100);
-  text("You are cheating",50,500);
+  text("You are cheating",50,850);
     textSize(random(12,36));
     text(int(random(10)),random(width),random(height));
  }
-  }
 }
 rect(mouseX-100,900,200,30);
 if(ballx-100 < mouseX && mouseX < ballx+100 && bally > 885 && bally < 915){
